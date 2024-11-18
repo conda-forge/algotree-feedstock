@@ -1,13 +1,13 @@
 {% set name = "algotree" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/algotree-{{ version }}.tar.gz
-  sha256: 13bb4dc6583a58e1784adee20f4d803bd4105359f1c6f52151e496d23f07152a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/AlgoTree-{{ version }}.tar.gz
+  sha256: 349eee21a57c5f40f157be218788f944a723047b35b7945a56058219b383287d
 
 build:
   entry_points:
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -32,6 +32,7 @@ test:
     - jt --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/queelius/AlgoTree
