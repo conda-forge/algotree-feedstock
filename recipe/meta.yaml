@@ -1,13 +1,13 @@
 {% set name = "algotree" %}
-{% set version = "0.7.3" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/AlgoTree-{{ version }}.tar.gz
-  sha256: 349eee21a57c5f40f157be218788f944a723047b35b7945a56058219b383287d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 97ec3686fa59df96cb8152b2e0fa22bc9bf483aea89029515ef08087f96f7532
 
 build:
   entry_points:
