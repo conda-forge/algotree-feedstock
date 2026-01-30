@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: algotree
-  version: 2.0.1
+  version: "2.0.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: d509374d77ca22a5ad6f0f6763cf70792c127fb091029b50a2f96885cbe0fb2f
+  sha256: 1ee6ad9818cef4461ce88a4be7d18dcb9637d48cdb2265381f2da942b737222d
 
 build:
   number: 0
